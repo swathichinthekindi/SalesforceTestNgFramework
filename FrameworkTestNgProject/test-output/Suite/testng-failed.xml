@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.training.listerners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Annotations(failed)">
+    <classes>
+      <class name="com.training.tests.HomeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="MySettingfromUserMenuDropdownTC7"/>
+          <include name="myProfilefromUserDropDownTC6"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.training.tests.HomeTest -->
+      <class name="com.training.tests.ContactTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="checkErrorMessageNewVieContactTC30"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.training.tests.ContactTest -->
+      <class name="com.training.tests.OpportunityTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TestOpportunityPipelineReportTC17"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.training.tests.OpportunityTest -->
+      <class name="com.training.tests.LeadTest">
+        <methods>
+          <include name="defaultViewTC22"/>
+          <include name="beforeMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.training.tests.LeadTest -->
+      <class name="com.training.tests.AccountTest">
+        <methods>
+          <include name="clickOnEditViewTC12"/>
+          <include name="beforeMethod"/>
+          <include name="teardown"/>
+          <include name="createAccountReportTC14"/>
+        </methods>
+      </class> <!-- com.training.tests.AccountTest -->
+    </classes>
+  </test> <!-- Annotations(failed) -->
+</suite> <!-- Failed suite [Suite] -->
